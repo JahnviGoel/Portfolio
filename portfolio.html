@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahnvi Goel - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: rgb(0,33,77);
+            color: white;
+            line-height: 1.6;
+        }
+        header {
+            background-color: yellow;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content:center;
+            gap: 2rem;
+            background-color: rgb(0,33,77);
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+        nav a:hover {
+            color: yellow;
+
+        }
+        #intro {
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        #intro button {
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            background-color: yellow;
+            border: none;
+            color: rgb(0,33,77);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        #intro button:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 8px;
+        }
+        section {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+        }
+        h3 {
+            color: yellow;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 0.75rem;
+            width: 100%;
+            background-color: yellow;
+            color: rgb(0,33,77);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jahnvi Goel</h1>
+        <h2>Frontend Designer & Aspiring Java Developer</h2>
+    </header>
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="intro">
+        <h3>Welcome!</h3>
+        <p>I work to make a better web, one that is easy to use, beautiful, and accessible to all.</p>
+        <button>Hire Me</button>
+        <img src="jahnvi photo.jpg" alt="Jahnvi Goel">
+    </section>
+    <section id="education">
+        <h3>Education</h3>
+        <p>MCA - Madan Mohan Malaviya University of Technology</p>
+        <p>BSc (Mathematics) - 81.0% (2024) - Deen Dayal Upadhyaya Gorakhpur University</p>
+        <p>Class 12 - 88.1% (2021) - St Joseph's School [ISc]</p>
+        <p>Class 10 - 86.3% (2019) - St Joseph's School [ICSE]</p>
+    </section>
+    <section id="projects">
+        <h3>Projects</h3>
+        <h4>Number Guessing Game</h4>
+        <p>A game where users guess a random number within a range, getting hints to minimize attempts.</p>
+        <h4>Calculator</h4>
+        <p>A simple calculator that performs arithmetic operations with a user-friendly interface.</p>
+    </section>
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <p>I'll be glad to answer your questions.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
